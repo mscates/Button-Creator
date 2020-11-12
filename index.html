@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0eae80395a.js" crossorigin="anonymous"></script>
+  <title>Button Creator</title>
+</head>
+
+<body>
+  <header>
+    <h1>Button Creator</h1>
+    <button class="create">Create Your Button</button>
+  </header>
+  <section class="main-container main-container-hidden">
+    <div class="button-rule-container">
+      <div class="add-rule-container">
+        <div class="input-container">
+          <label for="property">Property</label>
+          <input id="property" class="property search" type="text" name="property" />
+          <div class="rule-container"></div>
+          <label for="value">Value</label>
+          <input id="value" class="value" type="text" name="value" />
+        </div>
+        <div class="show-rule-container"></div>
+      </div>
+    </div>
+    <div class="button-and-code">
+      <div class="newButtonContainer"></div>
+      <div class="code-results">
+        <div class="code"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="components/property-changer.js"></script>
+  <script src="components/value-changer.js"></script>
+</body>
+
+</html>
